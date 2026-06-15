@@ -59,7 +59,20 @@
 
 html { font-size: 16px; }
 
-body {
+body
+   <!-- 씬 배경 영상 -->
+<video id="scene-video" autoplay muted playsinline
+  style="
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5;
+    pointer-events: none;
+  ">
+  <source id="scene-video-src" src="" type="video/mp4">
+</video>{
   background: var(--bg-void);
   color: var(--text-bone);
   font-family: 'Noto Serif KR', serif;
